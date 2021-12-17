@@ -29,7 +29,7 @@ const EmployeeDetail = (props) => {
 		};
 
 		getEmployeeFromDB();
-	}, []);
+	}, [employeeId]);
 
 	if (loading) {
 		return <div> Loading data ... </div>;

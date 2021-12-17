@@ -75,7 +75,7 @@ const EmployeeList = () => {
 					{companyContext?.employees
 						?.filter((employee) => {
 							if (companyContext?.employeeFilter === 0) return true;
-							return employee.departmentId == companyContext?.employeeFilter;
+							return employee.departmentId === companyContext?.employeeFilter;
 						})
 						.map((employee) => {
 							return (
